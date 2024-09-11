@@ -1,0 +1,53 @@
+[gd_scene load_steps=7 format=3 uid="uid://y5sitmajupif"]
+
+[ext_resource type="Script" path="res://scripts/block.gd" id="1_026ws"]
+[ext_resource type="Material" uid="uid://ge3cupupfbml" path="res://assets/blocks/stone.tres" id="2_k4xg0"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_6ujcn"]
+
+[sub_resource type="GDScript" id="GDScript_mc0eb"]
+script/source = "extends MeshInstance3D
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass
+	
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+
+#func block_texture(blockid):
+	#set_surface_override_material(0, load(BlockList.blocks.get(blockid).texture))
+"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_auqg3"]
+
+[sub_resource type="GDScript" id="GDScript_83c6m"]
+script/source = "extends CollisionShape3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+	
+		
+"
+
+[node name="block" type="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_026ws")
+
+[node name="blockmesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_6ujcn")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("2_k4xg0")
+script = SubResource("GDScript_mc0eb")
+
+[node name="blockcollision" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_auqg3")
+script = SubResource("GDScript_83c6m")

@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://47v4slbh8fdu"]
+
+[ext_resource type="Texture2D" uid="uid://ct3kcufbxelnr" path="res://assets/gui/hud/hotbar.png" id="1_c2824"]
+[ext_resource type="Script" path="res://scripts/hud.gd" id="1_g2u3g"]
+[ext_resource type="PackedScene" uid="uid://v0lg8rgiukql" path="res://components/huditem.tscn" id="1_isvps"]
+[ext_resource type="Script" path="res://scripts/hotbar.gd" id="1_tkc34"]
+[ext_resource type="Texture2D" uid="uid://dvq1ri3ochpuq" path="res://assets/gui/hud/packboy.png" id="2_dxa53"]
+
+[node name="hud" type="Node"]
+script = ExtResource("1_g2u3g")
+
+[node name="master" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -356.0
+offset_right = 362.0
+grow_vertical = 0
+
+[node name="hotbar" type="Control" parent="master"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 18.0
+offset_top = -397.0
+offset_right = 398.0
+offset_bottom = -37.0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 8
+script = ExtResource("1_tkc34")
+
+[node name="0" parent="master/hotbar" instance=ExtResource("1_isvps")]
+z_index = 1
+position = Vector2(23, 85)
+
+[node name="1" parent="master/hotbar" instance=ExtResource("1_isvps")]
+z_index = 2
+position = Vector2(136, 49)
+scale = Vector2(1.3, 1.3)
+slotid = 1
+
+[node name="2" parent="master/hotbar" instance=ExtResource("1_isvps")]
+z_index = 1
+position = Vector2(257, 87)
+scale = Vector2(1.6, 1.6)
+slotid = 2
+
+[node name="3" parent="master/hotbar" instance=ExtResource("1_isvps")]
+z_index = 1
+position = Vector2(301, 204)
+scale = Vector2(1.3, 1.3)
+slotid = 3
+
+[node name="4" parent="master/hotbar" instance=ExtResource("1_isvps")]
+z_index = 1
+position = Vector2(274, 307)
+slotid = 4
+
+[node name="hotbartexture" type="Sprite2D" parent="master/hotbar"]
+position = Vector2(164, 174)
+texture = ExtResource("1_c2824")
+
+[node name="playericon" type="Sprite2D" parent="master"]
+z_index = 2
+position = Vector2(168.5, 200)
+texture = ExtResource("2_dxa53")

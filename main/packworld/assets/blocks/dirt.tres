@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://ds1jn4h8rv4cp"]
+
+[ext_resource type="Texture2D" uid="uid://bsxndbn1s8qa7" path="res://assets/blocks/dirt.png" id="1_mfwas"]
+
+[resource]
+albedo_texture = ExtResource("1_mfwas")
+uv1_scale = Vector3(3, 2, 1)
+texture_filter = 0

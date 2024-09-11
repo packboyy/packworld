@@ -1,0 +1,48 @@
+[gd_scene load_steps=11 format=3 uid="uid://y5sitmajupif"]
+
+[ext_resource type="Material" uid="uid://ge3cupupfbml" path="res://stone.tres" id="1_6a1qj"]
+[ext_resource type="Script" path="res://blocktexture.gd" id="2_gpt5w"]
+[ext_resource type="Texture2D" uid="uid://ch125mml2ytki" path="res://assets/blocks/stone.png" id="3_gvlyn"]
+[ext_resource type="Texture2D" uid="uid://bsxndbn1s8qa7" path="res://assets/blocks/dirt.png" id="4_p2not"]
+[ext_resource type="Script" path="res://blockcollision.gd" id="5_7nwhn"]
+[ext_resource type="ArrayOccluder3D" uid="uid://2307fpfi63jv" path="res://block.occ" id="6_ielgt"]
+[ext_resource type="Script" path="res://blockrenderer.gd" id="7_4hg5u"]
+
+[sub_resource type="GDScript" id="GDScript_ahq3x"]
+script/source = "extends StaticBody3D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[sub_resource type="BoxMesh" id="BoxMesh_6ujcn"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_auqg3"]
+
+[node name="block" type="StaticBody3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = SubResource("GDScript_ahq3x")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_6ujcn")
+skeleton = NodePath("../..")
+surface_material_override/0 = ExtResource("1_6a1qj")
+script = ExtResource("2_gpt5w")
+mat = ExtResource("1_6a1qj")
+stone = ExtResource("3_gvlyn")
+dirt = ExtResource("4_p2not")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_auqg3")
+script = ExtResource("5_7nwhn")
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="."]
+occluder = ExtResource("6_ielgt")
+script = ExtResource("7_4hg5u")

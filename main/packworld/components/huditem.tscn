@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://v0lg8rgiukql"]
+
+[ext_resource type="Script" path="res://scripts/huditem.gd" id="1_r5iaq"]
+
+[node name="huditem" type="Node2D"]
+script = ExtResource("1_r5iaq")
+
+[node name="itemtexture" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 25.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="stackamt" type="RichTextLabel" parent="."]
+offset_left = 10.0
+offset_top = -2.0
+offset_right = 50.0
+offset_bottom = 38.0
+scale = Vector2(1.72, 1.72)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_constants/shadow_offset_y = 3
+theme_override_constants/shadow_offset_x = 0
+theme_override_constants/shadow_outline_size = 9
+theme_override_font_sizes/bold_italics_font_size = 1
+theme_override_font_sizes/bold_font_size = 28
+bbcode_enabled = true
+text = "[font=Arial][b]12[/b]"
+fit_content = true

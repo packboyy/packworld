@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5aygtoiof25s"]
+
+[ext_resource type="PackedScene" uid="uid://jmmh2bo8kgtp" path="res://components/player.tscn" id="1_gugim"]
+[ext_resource type="PackedScene" uid="uid://d1g4v52ni7qp4" path="res://chunk.tscn" id="3_8lsr5"]
+
+[node name="Spatial" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00927114, -2.38419e-07, -0.000219345)
+
+[node name="World" type="Node" parent="." groups=["Persist"]]
+
+[node name="Player" parent="World" instance=ExtResource("1_gugim")]
+
+[node name="Chunk" parent="World" groups=["Persist"] instance=ExtResource("3_8lsr5")]
