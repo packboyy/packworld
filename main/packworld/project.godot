@@ -23,6 +23,9 @@ Global="*res://scripts/global.gd"
 
 [display]
 
+window/stretch/mode="viewport"
+window/stretch/aspect="expand"
+window/handheld/orientation=6
 mouse_cursor/custom_image="res://assets/mouse.png"
 
 [editor_plugins]
@@ -74,4 +77,6 @@ click_right={
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.ios="vulkan"
+textures/vram_compression/import_etc2_astc=true
 occlusion_culling/use_occlusion_culling=true

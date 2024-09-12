@@ -17,23 +17,25 @@ anchor_bottom = 1.0
 offset_top = -356.0
 offset_right = 362.0
 grow_vertical = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
 
 [node name="hotbar" type="Control" parent="master"]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 18.0
-offset_top = -397.0
-offset_right = 398.0
-offset_bottom = -37.0
+offset_left = 26.0
+offset_top = -416.0
+offset_right = 406.0
+offset_bottom = -56.0
 grow_vertical = 0
 size_flags_horizontal = 0
 size_flags_vertical = 8
 script = ExtResource("1_tkc34")
 
 [node name="0" parent="master/hotbar" instance=ExtResource("1_isvps")]
-z_index = 1
+z_index = 3
 position = Vector2(23, 85)
 
 [node name="1" parent="master/hotbar" instance=ExtResource("1_isvps")]
@@ -65,5 +67,5 @@ texture = ExtResource("1_c2824")
 
 [node name="playericon" type="Sprite2D" parent="master"]
 z_index = 2
-position = Vector2(168.5, 200)
+position = Vector2(167, 179)
 texture = ExtResource("2_dxa53")

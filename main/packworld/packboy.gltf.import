@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bx2orjpeipjwr"
+uid="uid://buwbgga45wmcu"
 path="res://.godot/imported/packboy.gltf-c48f7acae71a2966b258bbb8477fec4c.scn"
 
 [deps]
@@ -18,6 +18,7 @@ nodes/root_name=""
 nodes/apply_root_scale=true
 nodes/root_scale=1.0
 nodes/import_as_skeleton_bones=false
+nodes/use_node_type_suffixes=true
 meshes/ensure_tangents=true
 meshes/generate_lods=true
 meshes/create_shadow_meshes=true

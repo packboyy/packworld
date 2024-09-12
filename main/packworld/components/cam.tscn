@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://c1hv1h0xrgqx8"]
+
+[node name="cam" type="Camera3D"]
+transform = Transform3D(0.980645, 0, -0.195792, 0, 1, 0, 0.195792, 0, 0.980645, -1.77026, -0.429414, 9.33811)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.993075, 0.108956, -0.0439302, -0.101075, 0.983011, 0.153212, 0.0598772, -0.147711, 0.987216, -0.478283, 3.31307, 0.0954924)
+light_color = Color(0.871516, 0.851344, 0.870243, 1)
+light_energy = 1.152
+light_indirect_energy = 4.048
+
+[node name="RayCast3D" type="RayCast3D" parent="."]

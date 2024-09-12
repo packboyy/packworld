@@ -2,20 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp4p40l34ephw"
+uid="uid://x8wood10gyek"
 path.s3tc="res://.godot/imported/packboy_0.png-e5b139a93033fc0394f158e7f2daef24.s3tc.ctex"
+path.etc2="res://.godot/imported/packboy_0.png-e5b139a93033fc0394f158e7f2daef24.etc2.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
-}
-generator_parameters={
-"md5": "da254dfe2c0d52ee486619d0576e4725"
 }
 
 [deps]
 
 source_file="res://packboy_0.png"
-dest_files=["res://.godot/imported/packboy_0.png-e5b139a93033fc0394f158e7f2daef24.s3tc.ctex"]
+dest_files=["res://.godot/imported/packboy_0.png-e5b139a93033fc0394f158e7f2daef24.s3tc.ctex", "res://.godot/imported/packboy_0.png-e5b139a93033fc0394f158e7f2daef24.etc2.ctex"]
 
 [params]
 

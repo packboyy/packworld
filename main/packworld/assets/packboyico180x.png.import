@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dsnklb80coa5b"
-path="res://.godot/imported/packboy1.png-ec7d7497f7ded4cd5c739d730a7b8e7a.ctex"
+uid="uid://p18ah7m77d7t"
+path="res://.godot/imported/packboyico180x.png-ce4b59bbfcb9fcbccf582c8de0439d3d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://packboy1.png"
-dest_files=["res://.godot/imported/packboy1.png-ec7d7497f7ded4cd5c739d730a7b8e7a.ctex"]
+source_file="res://assets/packboyico180x.png"
+dest_files=["res://.godot/imported/packboyico180x.png-ce4b59bbfcb9fcbccf582c8de0439d3d.ctex"]
 
 [params]
 
