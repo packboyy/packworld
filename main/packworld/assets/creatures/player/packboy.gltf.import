@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://buwbgga45wmcu"
-path="res://.godot/imported/packboy.gltf-c48f7acae71a2966b258bbb8477fec4c.scn"
+path="res://.godot/imported/packboy.gltf-eb74de7e2ab5b9809f323de640de1d53.scn"
 
 [deps]
 
-source_file="res://packboy.gltf"
-dest_files=["res://.godot/imported/packboy.gltf-c48f7acae71a2966b258bbb8477fec4c.scn"]
+source_file="res://assets/creatures/player/packboy.gltf"
+dest_files=["res://.godot/imported/packboy.gltf-eb74de7e2ab5b9809f323de640de1d53.scn"]
 
 [params]
 

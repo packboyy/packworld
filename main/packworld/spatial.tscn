@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://jmmh2bo8kgtp" path="res://components/player.tscn" id="1_gugim"]
 [ext_resource type="PackedScene" uid="uid://c1hv1h0xrgqx8" path="res://components/cam.tscn" id="1_m2nqp"]
 [ext_resource type="Script" path="res://scripts/cam.gd" id="2_2ffqr"]
-[ext_resource type="PackedScene" uid="uid://d1g4v52ni7qp4" path="res://chunk.tscn" id="3_8lsr5"]
+[ext_resource type="PackedScene" uid="uid://d1g4v52ni7qp4" path="res://components/chunk.tscn" id="3_8lsr5"]
 
 [node name="Spatial" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00927114, -2.38419e-07, -0.000219345)
