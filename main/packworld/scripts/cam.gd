@@ -19,7 +19,6 @@ func _input(event):
 	if Input.is_mouse_button_pressed(MOUSE_BUTTON_WHEEL_DOWN):
 		position.z -= position.z * zoomspeed
 		
-		
 	if event is InputEventScreenTouch and !event.pressed:
 		fingers.erase(event.index)
 	
