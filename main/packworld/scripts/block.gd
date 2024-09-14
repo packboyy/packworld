@@ -21,4 +21,6 @@ func _input_event(camera: Camera3D, event: InputEvent, event_position: Vector3, 
 			queue_free()
 			var player = get_tree().get_first_node_in_group("player")
 			player.inv.additem(blockid, 1)
+			player.selectedpos = round(position)
+			print(player.selectedpos)
 	

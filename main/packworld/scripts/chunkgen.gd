@@ -4,6 +4,7 @@ signal blocktextureidsignal(blockid)
 
 func _ready():
 	genchunk(64)
+	$navreg.bake_navigation_mesh()
 	pass
 
 func genchunk(chunkrange):

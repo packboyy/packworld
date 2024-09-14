@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://47v4slbh8fdu"]
+[gd_scene load_steps=7 format=3 uid="uid://47v4slbh8fdu"]
 
 [ext_resource type="Texture2D" uid="uid://ct3kcufbxelnr" path="res://assets/gui/hud/hotbar.png" id="1_c2824"]
 [ext_resource type="Script" path="res://scripts/hud.gd" id="1_g2u3g"]
 [ext_resource type="PackedScene" uid="uid://v0lg8rgiukql" path="res://components/huditem.tscn" id="1_isvps"]
 [ext_resource type="Script" path="res://scripts/hotbar.gd" id="1_tkc34"]
 [ext_resource type="Texture2D" uid="uid://dvq1ri3ochpuq" path="res://assets/gui/hud/packboy.png" id="2_dxa53"]
+[ext_resource type="Texture2D" uid="uid://db768wq6m8mea" path="res://assets/gui/hud/packboylabel.png" id="6_db7hs"]
 
 [node name="hud" type="Node"]
 script = ExtResource("1_g2u3g")
@@ -14,21 +15,20 @@ layout_mode = 3
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -356.0
-offset_right = 362.0
 grow_vertical = 0
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_horizontal = 0
+size_flags_vertical = 8
 
 [node name="hotbar" type="Control" parent="master"]
+z_index = 2
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 26.0
-offset_top = -416.0
-offset_right = 406.0
-offset_bottom = -56.0
+offset_left = 22.6667
+offset_top = -426.667
+offset_right = 402.667
+offset_bottom = -66.6667
 grow_vertical = 0
 size_flags_horizontal = 0
 size_flags_vertical = 8
@@ -67,5 +67,11 @@ texture = ExtResource("1_c2824")
 
 [node name="playericon" type="Sprite2D" parent="master"]
 z_index = 2
-position = Vector2(167, 179)
+texture_filter = 6
+position = Vector2(162.5, -179)
 texture = ExtResource("2_dxa53")
+
+[node name="label" type="Sprite2D" parent="master"]
+z_index = 3
+position = Vector2(229.167, -40.3334)
+texture = ExtResource("6_db7hs")

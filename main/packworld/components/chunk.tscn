@@ -4,3 +4,5 @@
 
 [node name="Chunk" type="Node3D"]
 script = ExtResource("1_ush6a")
+
+[node name="navreg" type="NavigationRegion3D" parent="."]

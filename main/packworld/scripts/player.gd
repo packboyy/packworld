@@ -8,6 +8,7 @@ extends CharacterBody3D
 @onready var inv = $inv
 var targetblock:Vector3
 var target_velocity = Vector3.ZERO
+var selectedpos: Vector3 = Vector3.ZERO
 
 func _ready():
 	position.z = 0
@@ -50,5 +51,9 @@ func _physics_process(delta):
 		target_velocity.y = target_velocity.y - (fall_acceleration * delta)
 
 	# Moving the Character
-	velocity = target_velocity
 	move_and_slide()
+	if targetblock != Vector3.ZERO:
+		$pathfinding.set_target_position(targetblock)
+		print(velocity)
+	velocity = $pathfinding.get_next_path_position() - global_transform.origin + target_velocity
+	

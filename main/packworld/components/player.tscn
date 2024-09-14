@@ -22,3 +22,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.972565, 0)
 [node name="hud" parent="." instance=ExtResource("3_rnr3f")]
 
 [node name="inv" parent="." instance=ExtResource("4_c1a85")]
+
+[node name="pathfinding" type="NavigationAgent3D" parent="."]
+simplify_path = true
+avoidance_enabled = true

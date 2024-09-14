@@ -79,4 +79,5 @@ click_right={
 textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.ios="vulkan"
 textures/vram_compression/import_etc2_astc=true
+anti_aliasing/screen_space_roughness_limiter/amount=1.4
 occlusion_culling/use_occlusion_culling=true
